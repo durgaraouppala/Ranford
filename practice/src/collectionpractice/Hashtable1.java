@@ -7,8 +7,8 @@ public class Hashtable1 {
 
 	public static void main(String[] args) {
 		Enumeration<String> Keys;
-		String str1;
-		Integer value;
+		String str1 = null;
+		Integer value = null;
 		Hashtable<String,Integer> ht=new Hashtable<String,Integer>();
 		ht.put("Durga", 22);
 		ht.put("Mubeen",18);
@@ -19,11 +19,11 @@ public class Hashtable1 {
 		while(Keys.hasMoreElements())
 		{
 			str1=Keys.nextElement();
-//			System.out.println(str1);
+			System.out.println(str1+":"+ht.get(str1));
+		
 		}
 		
 		value=  ht.get("Durga").intValue();
-//		ht.put("Durga", 17);
 		System.out.println(value);
 
 	}

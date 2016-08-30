@@ -14,7 +14,7 @@ public class MyHashMapKeys {
         Set<Integer> keys = hm.keySet();
         for(Integer key:keys)
         {
-//        	System.out.println(key);
+        	System.out.println(key);
               
         if(key.equals(99))
         {

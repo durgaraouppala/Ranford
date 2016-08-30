@@ -16,6 +16,7 @@ public class CollectionToArray {
 			String contents=s[i];
 			System.out.println(contents);
 		}
+		
 	}
 
 }

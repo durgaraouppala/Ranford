@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testngpractice.Testngxml">
+      <class name="selenium.Radiobuttons">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-          <include name="csvTest"/>
+          <include name="Before"/>
+          <include name="f"/>
+          <include name="AfterTest"/>
         </methods>
-      </class> <!-- testngpractice.Testngxml -->
+      </class> <!-- selenium.Radiobuttons -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

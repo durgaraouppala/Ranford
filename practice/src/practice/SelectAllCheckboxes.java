@@ -14,10 +14,10 @@ public class SelectAllCheckboxes {
 		driver.get("");
 		WebElement cheBox=(WebElement) driver.findElement(By.xpath("//htmltag[@attribute='checkBox']"));
 		
-		//for(int i=0;i<cheBox.size();i++)
-		{
-			//cheBox.get(i).click();
-		}
+//		for(int i=0;i<cheBox.size();i++)
+//		{
+//			cheBox.get(i).click();
+//		}
 
 	}
 

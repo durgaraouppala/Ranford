@@ -23,13 +23,13 @@ import jxl.read.biff.BiffException;
 public class ReadExcelDataProvider {
 	public WebDriver driver;
 	public WebDriverWait wait;
-	String appURL = "https://www.linkedin.com/";
+	String appURL = "https://www.gmail.com/";
 	
 	//Locators
-	private By byEmail = By.id("session_key-login");
-	private By byPassword = By.id("session_password-login");
-	private By bySubmit = By.id("signin");
-	private By byError = By.id("global-alert-queue");
+	private By byEmail = By.name("Email");
+	private By byPassword = By.name("Passwd");
+	private By bySubmit = By.name("signIn");
+	private By byError = By.id("errormsg_0_Email");
 	
 	@BeforeClass
 	public void testSetup() {
@@ -43,6 +43,7 @@ public class ReadExcelDataProvider {
 	public void VerifyInvalidLogin(String userName, String password) {
 		driver.navigate().to(appURL);
 		driver.findElement(byEmail).sendKeys(userName);
+		driver.findElement(bySubmit).click();
 		driver.findElement(byPassword).sendKeys(password);
 		//wait for element to be visible and perform click
 		wait.until(ExpectedConditions.visibilityOfElementLocated(bySubmit));
@@ -58,7 +59,7 @@ public class ReadExcelDataProvider {
 	
 	@DataProvider(name="empLogin")
 	public Object[][] loginData() {
-		Object[][] arrayObject = getExcelData("D:/sampledoc.xls","Sheet1");
+		Object[][] arrayObject = getExcelData("E://sampledoc.xls","Sheet1");
 		return arrayObject;
 	}
 

@@ -26,7 +26,7 @@ public class ReapeatingElements {
 	       
 	        for(int k=0; k<output.length; k++){
 	            output[k] = input[k];
-	            
+	            System.out.println(k);
 	        }
 	         
 	        return output;
@@ -36,7 +36,7 @@ public class ReapeatingElements {
 	        int[] input1 = {2,3,6,6,8,9,10,10,10,12,12};
 	        int[] output = removeDuplicates(input1);
 	        for(int i:output){
-//	            System.out.print(i+" ");
+	            System.out.print(i+" ");
 	        }
 	    }
 	}
